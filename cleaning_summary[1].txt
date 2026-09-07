@@ -1,0 +1,22 @@
+Raw shape: (620, 9)
+
+Step 1: Standardized text casing/whitespace in Region, Category, PaymentMethod
+
+Step 2: Missing values before cleaning:
+Region           30
+Category         31
+PaymentMethod    33
+Quantity         31
+UnitPrice        31
+CustomerAge      30
+
+Filled categorical NaNs with mode, numeric NaNs with median.
+
+Step 3: Removed 20 duplicate rows.
+
+Step 4: Fixed 5 invalid CustomerAge values (out of 0-100 range).
+
+Step 5: Capped 10 Revenue outliers using IQR bounds [-1956.76, 4419.98].
+
+Final cleaned shape: (600, 9)
+Remaining missing values: 0
